@@ -3,8 +3,15 @@ import ReactDOM from 'react-dom';
 import "./index.css";
 import * as serviceWorker from './serviceWorker';
 import App from "./App";
+import { StateProvider } from "./contexts/StateProvider";
+import reducer, { initialState } from "./contexts/reducer";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <StateProvider initialState={initialState} reducer={reducer}>
+    <App />
+  </StateProvider>,
+  document.getElementById("root")
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
