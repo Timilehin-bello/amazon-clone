@@ -44,10 +44,10 @@ function Home() {
           />
           <Product
             id="3254354345"
-            title="Apple iPhone 11 (256GB, Purple) [Locked] + Carrier Subscription"
+            title="Apple iPhone 11 Pro Max (64GB, Midnight Green) [Locked] + Carrier Subscription"
             price={986.99}
             rating={5}
-            image="https://m.media-amazon.com/images/I/71xn9bCRfhL.jpg"
+            image="https://m.media-amazon.com/images/G/01/appcore/phone/AMZ_FamiyStripe_iPhone_11ProMax.png"
           />
         </div>
         <div className="home__row">

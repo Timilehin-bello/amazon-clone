@@ -9,8 +9,6 @@ function Header() {
   const [{ basket }] = useStatValue();
   console.log(basket);
 
-
-
   return (
     <nav className="header">
       <Link to="/">
