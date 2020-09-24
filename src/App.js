@@ -10,7 +10,7 @@ import { auth } from "./firebase/firebase";
 
 
 function App() {
-  const [{ user }, dispatch] = useStatValue();
+  const [, dispatch] = useStatValue();
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
@@ -30,8 +30,6 @@ function App() {
       unsubscribe();
     };
   }, [dispatch]);
-
-  console.log(user);
 
   return (
     <BrowserRouter>
